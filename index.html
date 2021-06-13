@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 1. link bootstrap.css -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    h3 {
+      margin: 1rem 0;
+      color: gray;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/1920/1080/?random=1") no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .container {
+      margin: 2rem;
+      background: rgba(256, 256, 256, 0.5);
+      border-radius: 3%;
+      width: 25%;
+      height: 50%;
+      position: relative;
+
+    }
+
+    .form-control {
+
+      border-radius: 0rem;
+
+
+    }
+
+
+    .row {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    img {
+      width: 50px;
+      height: 50px;
+      opacity: 0.8;
+      position: absolute;
+      top: -8%;
+    }
+
+    .btn {
+      width: 120%;
+      margin-bottom: 2rem;
+      margin-left: 0.2rem;
+
+    }
+
+    a:visited {
+      color: white;
+    }
+
+    .person {
+      position: relative;
+    }
+
+    .person>span {
+      position: absolute;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      top: 20%;
+      left: 10%;
+
+    }
+
+    .person>input {
+      width: 100%;
+      padding-left: 30px;
+    }
+
+    .lock {
+      position: relative;
+    }
+
+    .lock>span {
+      position: absolute;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      top: 20%;
+      left: 10%;
+
+    }
+
+    .lock>input {
+      width: 100%;
+      padding-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <div class="row">
+      <img
+        src="https://d3n8a8pro7vhmx.cloudfront.net/themes/5e5c9543c294805d9584c037/attachments/original/1589265344/login.png?1589265344">
+      <h3>Sign In</h3>
+
+
+      <form>
+        <div class="form-group row">
+
+          <div class="person col-10">
+            <span class="material-icons">person</span>
+            <input type="text" class="form-control " id="inputEmail3" placeholder="Username">
+          </div>
+        </div>
+        <div class="form-group row">
+
+          <div class="lock col-10">
+            <span class="material-icons">
+              lock
+            </span>
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>
+
+        <div class="col-10">
+          <button type="submit" class="btn btn-primary ">Log in</button>
+        </div>
+
+        <!-- =============================================================================== -->
+
+        <div class="row">
+
+
+          <div class=" form-group row flex-row justify-content-between">
+
+            <div class="col-auto form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label text-white small" for="gridCheck1">Remember me</label>
+            </div>
+
+
+            <div class="col-auto text-white small"><a href="#">Forget password?</a></div>
+          </div>
+
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================================================== -->
+  <script src=" ./js/jquery-3.6.0.min.js">
+  </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- ===================================================================================== -->
+
+
+</body </html>
