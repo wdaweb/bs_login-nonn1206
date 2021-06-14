@@ -12,7 +12,7 @@
   <style>
     h3 {
       margin: 1rem 0;
-      color: gray;
+      color: rgb(65, 65, 65);
     }
 
     body {
@@ -26,26 +26,14 @@
     }
 
     .container {
-      margin: 2rem;
       background: rgba(256, 256, 256, 0.5);
-      border-radius: 3%;
-      width: 25%;
-      height: 50%;
       position: relative;
-
     }
 
-    .form-control {
-
-      border-radius: 0rem;
-
-
-    }
 
 
     .row {
-      flex-direction: column;
-      flex-wrap: wrap;
+
       justify-content: center;
       align-items: center;
     }
@@ -61,9 +49,7 @@
 
     .btn {
       width: 120%;
-      margin-bottom: 2rem;
       margin-left: 0.2rem;
-
     }
 
     a:visited {
@@ -113,20 +99,21 @@
 <body>
 
 
-  <div class="container">
+  <div class="container w-25 h-50 rounded">
 
-    <div class="row">
+    <div class="row flex-column">
       <img
-        src="https://d3n8a8pro7vhmx.cloudfront.net/themes/5e5c9543c294805d9584c037/attachments/original/1589265344/login.png?1589265344">
-      <h3>Sign In</h3>
+        src="https://d3n8a8pro7vhmx.cloudfront.net/themes/5e5c9543c294805d9584c037/attachments/original/1589265344/login.png?1589265344"
+        cl>
+      <h3 class="mb-4">Sign In</h3>
 
 
       <form>
         <div class="form-group row">
 
           <div class="person col-10">
-            <span class="material-icons">person</span>
-            <input type="text" class="form-control " id="inputEmail3" placeholder="Username">
+            <span class="material-icons ">person</span>
+            <input type="text" class="form-control  rounded-0 mb-2 " id="inputEmail3" placeholder="Username">
           </div>
         </div>
         <div class="form-group row">
@@ -135,31 +122,31 @@
             <span class="material-icons">
               lock
             </span>
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            <input type="password" class="form-control  rounded-0 mb-2" id="inputPassword3" placeholder="Password">
           </div>
         </div>
 
         <div class="col-10">
-          <button type="submit" class="btn btn-primary ">Log in</button>
+          <button type="submit" class="btn btn-primary mb-5">Log in</button>
         </div>
 
         <!-- =============================================================================== -->
 
-        <div class="row">
 
 
-          <div class=" form-group row flex-row justify-content-between">
 
-            <div class="col-auto form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label text-white small" for="gridCheck1">Remember me</label>
-            </div>
+        <div class=" form-group row flex-row justify-content-between">
 
-
-            <div class="col-auto text-white small"><a href="#">Forget password?</a></div>
+          <div class=" col-auto form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label text-white small" for="gridCheck1">Remember me</label>
           </div>
 
+
+          <div class="col-auto  small"><a class="text-white" href="#">Forget password?</a></div>
         </div>
+
+
 
 
       </form>
